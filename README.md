@@ -1,4 +1,4 @@
-# @codewithsachin/ngx-motion
+# @code_with_sachin/ngx-motion
 
 Angular directives for [motion.dev](https://motion.dev) — scroll-in reveals, hover
 springs and press feedback, SSR-safe and reduced-motion aware.
@@ -18,7 +18,7 @@ reaching for `document`.
 ## Install
 
 ```bash
-npm i @codewithsachin/ngx-motion motion
+npm i @code_with_sachin/ngx-motion motion
 ```
 
 Peer dependencies: Angular 22+, `motion` 12+.
@@ -29,7 +29,7 @@ Peer dependencies: Angular 22+, `motion` 12+.
 
 ```ts
 import { ApplicationConfig } from '@angular/core';
-import { provideMotion } from '@codewithsachin/ngx-motion';
+import { provideMotion } from '@code_with_sachin/ngx-motion';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -58,7 +58,7 @@ Optional — omit it and every directive still works, defaulting to `reducedMoti
 
 ```ts
 import { ApplicationConfig } from '@angular/core';
-import { provideMotion } from '@codewithsachin/ngx-motion';
+import { provideMotion } from '@code_with_sachin/ngx-motion';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideMotion()],
@@ -83,7 +83,7 @@ import {
   HoverSpringDirective,
   PressDirective,
   provideMotion,
-} from '@codewithsachin/ngx-motion';
+} from '@code_with_sachin/ngx-motion';
 
 import { AppComponent } from './app.component';
 
@@ -137,7 +137,7 @@ An SSR-safe facade over motion.dev's `animate`, `inView` and `scroll`.
 
 ```ts
 import { inject } from '@angular/core';
-import { MotionService } from '@codewithsachin/ngx-motion';
+import { MotionService } from '@code_with_sachin/ngx-motion';
 
 export class Hero {
   private readonly motion = inject(MotionService);

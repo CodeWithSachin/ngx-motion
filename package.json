@@ -1,5 +1,5 @@
 {
-  "name": "@codewithsachin/ngx-motion",
+  "name": "@code_with_sachin/ngx-motion",
   "version": "0.1.0",
   "description": "Angular directives for motion.dev \u2014 scroll-in reveals, hover springs and press feedback, SSR-safe and reduced-motion aware.",
   "keywords": [
