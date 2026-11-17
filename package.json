@@ -1,42 +1,33 @@
 {
-  "name": "@code_with_sachin/ngx-motion",
-  "version": "0.1.0",
-  "description": "Angular directives for motion.dev \u2014 scroll-in reveals, hover springs and press feedback, SSR-safe and reduced-motion aware.",
-  "keywords": [
-    "angular",
-    "motion",
-    "motion.dev",
-    "animation",
-    "directive",
-    "in-view",
-    "hover",
-    "spring",
-    "ssr",
-    "reduced-motion",
-    "standalone",
-    "signals"
-  ],
-  "homepage": "https://sachinsingh.me/packages/motion",
-  "license": "MIT",
-  "author": "Sachin Singh (https://sachinsingh.me)",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CodeWithSachin/kshatriya-portfolio.git",
-    "directory": "projects/ngx-motion"
-  },
-  "bugs": {
-    "url": "https://github.com/CodeWithSachin/kshatriya-portfolio/issues"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "peerDependencies": {
-    "@angular/common": "^22.0.0",
-    "@angular/core": "^22.0.0",
-    "motion": "^12.0.0"
+  "name": "ngx-motion-workspace",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "npm@10.9.8",
+  "scripts": {
+    "build": "ng build ngx-motion",
+    "test": "ng test ngx-motion --watch=false",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "pack": "npm run build && npm pack ./dist/ngx-motion",
+    "release": "npm run build && npm test && npm publish ./dist/ngx-motion"
   },
   "dependencies": {
+    "@angular/common": "^22.0.0",
+    "@angular/compiler": "^22.0.0",
+    "@angular/core": "^22.0.0",
+    "@angular/platform-browser": "^22.0.0",
+    "rxjs": "~7.8.0",
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "devDependencies": {
+    "@angular/build": "^22.0.5",
+    "@angular/cli": "^22.0.5",
+    "@angular/compiler-cli": "^22.0.0",
+    "jsdom": "^28.0.0",
+    "motion": "^12.42.2",
+    "ng-packagr": "^22.0.0",
+    "prettier": "^3.8.1",
+    "typescript": "~6.0.2",
+    "vitest": "^4.0.8"
+  }
 }

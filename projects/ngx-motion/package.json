@@ -1,0 +1,42 @@
+{
+  "name": "@code_with_sachin/ngx-motion",
+  "version": "0.1.1",
+  "description": "Angular directives for motion.dev — scroll-in reveals, hover springs and press feedback, SSR-safe and reduced-motion aware.",
+  "keywords": [
+    "angular",
+    "motion",
+    "motion.dev",
+    "animation",
+    "directive",
+    "in-view",
+    "hover",
+    "spring",
+    "ssr",
+    "reduced-motion",
+    "standalone",
+    "signals"
+  ],
+  "homepage": "https://sachinsingh.me/packages/motion",
+  "license": "MIT",
+  "author": "Sachin Singh (https://sachinsingh.me)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeWithSachin/ngx-motion.git",
+    "directory": "projects/ngx-motion"
+  },
+  "bugs": {
+    "url": "https://github.com/CodeWithSachin/ngx-motion/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@angular/common": "^22.0.0",
+    "@angular/core": "^22.0.0",
+    "motion": "^12.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

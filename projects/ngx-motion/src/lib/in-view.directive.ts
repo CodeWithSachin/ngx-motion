@@ -1,11 +1,4 @@
-import {
-  DestroyRef,
-  Directive,
-  ElementRef,
-  afterNextRender,
-  inject,
-  input,
-} from '@angular/core';
+import { DestroyRef, Directive, ElementRef, afterNextRender, inject, input } from '@angular/core';
 import { MotionService } from './motion.service';
 
 export type InViewPreset = 'fade' | 'fade-up' | 'slide-left' | 'slide-right';

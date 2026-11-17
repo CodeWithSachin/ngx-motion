@@ -28,7 +28,11 @@ export class MotionService {
 
   readonly animate: AnimateFn = ((...args: Parameters<AnimateFn>) => {
     if (!this.isBrowser) {
-      return { stop() {}, cancel() {}, finished: Promise.resolve() } as unknown as ReturnType<AnimateFn>;
+      return {
+        stop() {},
+        cancel() {},
+        finished: Promise.resolve(),
+      } as unknown as ReturnType<AnimateFn>;
     }
     return animate(...args);
   }) as AnimateFn;
